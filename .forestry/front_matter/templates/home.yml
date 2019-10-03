@@ -26,10 +26,118 @@ fields:
     config: {}
     template: titeluntertitel
     label: T
+  - name: content
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Content
   label: Über uns
 - name: produkte
   type: field_group
   config: {}
+  fields:
+  - name: t
+    type: include
+    config: {}
+    template: titeluntertitel
+    label: T
+  - name: content
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Content
+  - name: produkte
+    type: field_group_list
+    fields:
+    - name: t
+      type: include
+      config: {}
+      template: titeluntertitel
+      label: T
+    - name: bild
+      type: file
+      config:
+        maxSize: 250
+      label: Bild
+    - name: buttonbeschriftung
+      type: text
+      config:
+        required: false
+      label: Buttonbeschriftung
+    - name: buttonlink
+      type: text
+      config:
+        required: false
+      label: Buttonlink
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Produkte
+  - name: produktarten
+    type: field_group
+    config: {}
+    fields:
+    - name: element
+      type: field_group_list
+      fields:
+      - name: bild
+        type: file
+        config:
+          maxSize: 250
+        label: Bild
+      - name: titel
+        type: text
+        config:
+          required: false
+        label: Titel
+      - name: content
+        type: textarea
+        default: ''
+        config:
+          required: false
+          wysiwyg: true
+          schema:
+            format: html-blocks
+        label: Content
+      - name: content_unten
+        type: textarea
+        default: ''
+        config:
+          required: false
+          wysiwyg: true
+          schema:
+            format: html-blocks
+        label: Content unten
+      config:
+        min: 
+        max: 
+        labelField: 
+      label: Element
+    - name: titel_content_unten
+      type: text
+      config:
+        required: false
+      label: Titel Content unten
+    - name: buttonbeschriftung
+      type: text
+      config:
+        required: false
+      label: Buttonbeschriftung
+    - name: button_link
+      type: text
+      config:
+        required: false
+      label: Button Link
+    label: Produktarten
   label: Produkte
 - name: service
   type: field_group
