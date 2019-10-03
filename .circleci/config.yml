@@ -8,7 +8,7 @@ jobs:
         steps:
             - add_ssh_keys:
                 fingerprints:
-                    - "76:22:40:4e:60:92:1b:67:06:1b:16:8a:a3:72:c8:c2"
+                    - "4e:c6:36:45:d9:c2:bc:19:cd:55:ef:a1:82:c1:64:d7"
             - checkout
             - run:
                 name: Get current site
@@ -21,7 +21,7 @@ jobs:
                 command: HUGO_ENV=production hugo -d ~/public
             - run:
                 name: Delete All SSH keys and Add the installed one
-                command: ssh-add -D && ssh-add ~/.ssh/id_rsa_7622404e60921b67061b168aa372c8c2
+                command: ssh-add -D && ssh-add ~/.ssh/id_rsa_4ec63645d9c2bc19cd55efa182c164d7
             - deploy:
                 name: Deploy to Github Pages & FTP
                 working_directory: ~/public
