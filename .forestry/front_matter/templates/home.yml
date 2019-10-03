@@ -80,7 +80,7 @@ fields:
     config:
       min: 
       max: 
-      labelField: 
+      labelField: untertitel
     label: Produkte
   - name: produktarten
     type: field_group
