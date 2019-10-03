@@ -1,4 +1,14 @@
 ---
 label: titelUntertitel
 hide_body: true
-fields: []
+fields:
+- name: titel
+  type: text
+  config:
+    required: false
+  label: Titel
+- name: untertitel
+  type: text
+  config:
+    required: false
+  label: Untertitel
