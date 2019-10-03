@@ -31,6 +31,12 @@ buttonbeschriftung = "weitere Infos"
 buttonlink = "mailto:info@ofen-warm.de?subject=GRAVISSIMO"
 titel = "<p><em>GRAVISSIMO</em></p>"
 untertitel = "Pelletofen ohne Strom"
+[[produkte.produkte]]
+bild = "/uploads/lima.png"
+buttonbeschriftung = "weitere Infos"
+buttonlink = "mailto:info@ofen-warm.de?subject=GRAVISSIMO"
+titel = "<p>LIMA</p>"
+untertitel = "Pelletofen mit Strom"
 [service]
 bild = ""
 content = ""
