@@ -108,15 +108,6 @@ fields:
           schema:
             format: html-blocks
         label: Content
-      - name: content_unten
-        type: textarea
-        default: ''
-        config:
-          required: false
-          wysiwyg: true
-          schema:
-            format: html-blocks
-        label: Content unten
       config:
         min: 
         max: 
@@ -137,6 +128,15 @@ fields:
       config:
         required: false
       label: Button Link
+    - name: content_unten
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: true
+        schema:
+          format: html-blocks
+      label: Content unten
     label: Produktarten
   label: Produkte
 - name: service
