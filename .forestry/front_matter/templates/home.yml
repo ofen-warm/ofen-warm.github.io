@@ -142,10 +142,60 @@ fields:
 - name: service
   type: field_group
   config: {}
+  fields:
+  - name: t
+    type: include
+    config: {}
+    template: titeluntertitel
+    label: T
+  - name: bild
+    type: file
+    config:
+      maxSize: 250
+    label: Bild
+  - name: content
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Content
   label: Service
 - name: ofenmobil
   type: field_group
   config: {}
+  fields:
+  - name: t
+    type: include
+    config: {}
+    template: titeluntertitel
+    label: T
+  - name: content
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Content
+  - name: buttonbeschriftung
+    type: text
+    config:
+      required: false
+    label: Buttonbeschriftung
+  - name: buttonlink
+    type: text
+    config:
+      required: false
+    label: Buttonlink
+  - name: bild
+    type: file
+    config:
+      maxSize: 250
+    label: Bild
   label: Ofenmobil
 - name: entscheidungshilfe
   type: field_group
