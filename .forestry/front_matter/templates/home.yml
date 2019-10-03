@@ -15,6 +15,12 @@ fields:
 - name: ueber_uns
   type: field_group
   config: {}
+  fields:
+  - name: bild
+    type: file
+    config:
+      maxSize: 250
+    label: Bild
   label: Über uns
 - name: produkte
   type: field_group
