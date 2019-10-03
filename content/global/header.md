@@ -1,11 +1,11 @@
 ---
 title: Header
 date: ''
-logo: ""
+logo: "/uploads/logo_ofenwarm.png"
 kontaktdaten: []
-tel: ""
-icon_tel: "/uploads/icon_phone.png"
-email: 
-icon_email: "/uploads/icon_mail.png"
+tel: "<p>09444/9774571</p>"
+icon_tel: "/uploads/tel-icon.png"
+email: <p><a href="info@ofen-warm.de " title="">info@ofen-warm.de</a></p>
+icon_email: "/uploads/mail-icon.png"
 
 ---
