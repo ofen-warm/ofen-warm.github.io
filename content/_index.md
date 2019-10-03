@@ -2,9 +2,9 @@
 seo_description = "asd"
 title = "Home"
 type = "page"
-[menu.main]
 [entscheidungshilfe]
 flammen = "/uploads/falmme_bottom.png"
+interner_linkname = "entscheidungshilfe"
 titel = "<p><em>ENTSCHEIDUNGS</em> HILFE</p>"
 untertitel = "Pelletofen"
 [[entscheidungshilfe.varianten]]
@@ -17,15 +17,18 @@ content = "<h3>PRO</h3><p>Vorteile gegenüber Pelletöfen ohne Strom:</p><ul><li
 titel = "<p><em>PELLETÖFEN</em><br>MIT STROM</p>"
 [kontakt]
 content = "<p>Büro ofen Warm </p><p>Hauptstraße 35, 93348 Kirchdorf</p><p>Telefon 09444/9774571 | info@ofen-warm.de</p>"
+[menu.main]
 [ofenmobil]
 bild = "/uploads/ofen-mobil.png"
 buttonbeschriftung = "Termin vereinbaren"
 buttonlink = "mailto:info@ofen-warm.de?subject=OfenMobil"
 content = "<p>Bei ernsthaftem Interesse an unseren Pelletöfen kommen wir auch mit unserem Ofenmobil direkt zu Ihnen und können diese beiden Öfen, für Sie natürlich kostenlos, vorführen.</p><ul><li><p>Pelletofen Gravissimo ohne Strom</p></li><li><p>Pelletofen Lima mit Strom</p></li></ul><p>Wir nehmen mit Ihnen die Öfen in Betrieb und zeigen Ihnen die Vorzüge, Unterschiede und Möglichkeiten.</p><p>Für die Vorführung, Dauer ca. 1 – 1,5 Stunden, benötigen wir von Ihnen lediglich einen 220 V Stromanschluss und eine Stellfläche (möglichst eben) für unser Gespann (Anhänger mit PKW, ca. 9 m Gesamtlänge)</p>"
+interner_linkname = "ofenmobil"
 titel = "<p><em>OFEN MOBIL</em></p>"
 untertitel = "Jetzt testen"
 [produkte]
 content = "<p>Wir führen von der Olsberg GmbH die Marken „Königshütte“ und „Fireplace Elite“.</p><p>Unser Schwerpunkt liegt bei Pelletöfen ohne und mit Strom, aber auch Kaminöfen finden Sie bei uns. „Klasse statt Masse“ heißt unser Motto!</p>"
+interner_linkname = "produkte"
 titel = "<p><em>PRODUKTE</em></p>"
 untertitel = "Ofen Warm"
 [produkte.produktarten]
@@ -50,22 +53,26 @@ titel = "Scheitholz Kaminöfen"
 bild = "/uploads/gravissimo.png"
 buttonbeschriftung = "weitere Infos"
 buttonlink = "mailto:info@ofen-warm.de?subject=GRAVISSIMO"
+interner_linkname = ""
 titel = "<p><em>GRAVISSIMO</em></p>"
 untertitel = "Pelletofen ohne Strom"
 [[produkte.produkte]]
 bild = "/uploads/lima.png"
 buttonbeschriftung = "weitere Infos"
 buttonlink = "mailto:info@ofen-warm.de?subject=GRAVISSIMO"
+interner_linkname = ""
 titel = "<p>LIMA</p>"
 untertitel = "Pelletofen mit Strom"
 [service]
 bild = "/uploads/service_kompass.png"
 content = "<ul><li><p>Life Ofenvorführung vor Ort</p></li><li><p>Kompetente Beratung und Verkauf </p></li><li><p>Lieferservice innerhalb unseres Einzugsgebietes</p></li><li><p>Kostenlose Einweisung in das Gerät</p></li><li><p>Unterstützung bei der Einbringung des Ofens an den Aufstellungsort, der Montage und Kaminanschluss (Abrechnung nach tatsächlichem Aufwand, keine Kernlochbohrung für Wandfutter möglich)</p></li><li><p>Ofenzubehör</p></li><li><p>Ersatzteil-Service</p></li></ul>"
+interner_linkname = "service"
 titel = "<p><em>SERVICE</em> FÜR SIE</p>"
 untertitel = "Unser"
 [ueber_uns]
 bild = "/uploads/2019/10/03/Bildschirmfoto vom 2019-10-03 10-50-53.png"
 content = "<p>Wir verfügen bereits seit über 15 Jahren Erfahrung im Verkauf von Pellet- und Kaminöfen. Deshalb können wir Ihnen eine kompetente Beratung zusichern. Wir freuen uns sehr wenn auch Sie uns Ihr Vertrauen schenken.</p>"
+interner_linkname = "ueberuns"
 titel = "<p>OFEN <em>WARM</em></p>"
 untertitel = "Pelletöfen & Kaminöfen"
 
