@@ -5,24 +5,10 @@ admin_path: "/admin"
 webhook_url: 
 sections:
 - type: directory
-  path: content/news
-  label: News
-  create: documents
-  match: "**/*"
-  templates:
-  - news
-- type: directory
   path: content
   label: Seiten
   create: all
   match: "*"
-- type: directory
-  path: content/produkte
-  label: Produkte
-  create: all
-  match: "**/*"
-  templates:
-  - product
 - type: directory
   path: content/global
   label: Global
