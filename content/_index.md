@@ -3,10 +3,13 @@ seo_description = "asd"
 title = "Home"
 type = "page"
 [entscheidungshilfe]
-flammen = ""
-titel = ""
-untertitel = ""
-varianten = []
+flammen = "/uploads/falmme_bottom.png"
+titel = "<p><em>ENTSCHEIDUNGS</em> HILFE</p>"
+untertitel = "Pelletofen"
+[[entscheidungshilfe.varianten]]
+bild = ""
+content = "<h3>PRO</h3><p>Vorteile gegenüber Pelletöfen ohne Strom:</p><ul><li><p>Automatisches Starten</p></li><li><p>Mehrere Zeitfenster mit unterschiedlichen Temperaturen einstellbar</p></li><li><p>Temperatursteuerung über Thermostat</p></li><li><p>Mit Raumluftgebläse effektivere Luftumwälzung möglich</p></li><li><p>Fernsteuerung über APP</p></li></ul><h3>CONTRA</h3><p>Wichtigste Nachteile gegenüber Pelletöfen ohne Strom:</p><ul><li><p>Keine Kamin-Mehrfachbelegung im Regelfall möglich</p></li><li><p>Hörbares Warmluft-Gebläse, bei manchen Modellen aber auch ausschaltbar</p></li><li><p>Stromverbrauch</p></li><li><p>Höhere Unterhaltungskosten </p></li><li><p>Regelmäßiger Kundendienst durch einen autorisierten Fachmann empfehlenswert/notwendig (Nach ca. 2.000 Betriebsstunden)</p></li></ul>"
+titel = "<p><em>PELETÖFEN</em><br>MIT STROM</p>"
 [kontakt]
 content = ""
 [ofenmobil]
