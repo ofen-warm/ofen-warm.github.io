@@ -12,5 +12,29 @@ fields:
   config: {}
   template: seo
   label: SEO
+- name: ueber_uns
+  type: field_group
+  config: {}
+  label: Über uns
+- name: produkte
+  type: field_group
+  config: {}
+  label: Produkte
+- name: service
+  type: field_group
+  config: {}
+  label: Service
+- name: ofenmobil
+  type: field_group
+  config: {}
+  label: Ofenmobil
+- name: entscheidungshilfe
+  type: field_group
+  config: {}
+  label: Entscheidungshilfe
+- name: kontakt
+  type: field_group
+  config: {}
+  label: Kontakt
 pages:
 - content/_index.md
