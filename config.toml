@@ -2,3 +2,27 @@ baseURL = "https://ofen-warm.github.io"
 languageCode = "de-de"
 theme = "ofen-warm"
 title = "ofen-warm"
+[[menu.main]]
+name = "Kontakt"
+url = "#kontakt"
+weight = 6
+[[menu.main]]
+name = "Entscheidungshilfe"
+url = "#entscheidungshilfe"
+weight = 5
+[[menu.main]]
+name = "Ofenmobil"
+url = "#ofenmobil"
+weight = 4
+[[menu.main]]
+name = "Service"
+url = "#service"
+weight = 3
+[[menu.main]]
+name = "Produkte"
+url = "#produkte"
+weight = 2
+[[menu.main]]
+name = "Über uns"
+url = "#ueberuns"
+weight = 1

@@ -4,7 +4,7 @@ titel_header = "Impressum"
 title = "Impressum"
 type = "page"
 [menu.footer]
-weight = 2
+weight = 3
 
 +++
 Angaben gemäß § 5 TMG:
@@ -30,4 +30,3 @@ Design & Konzept
 
 Logo & Print
 Rosi Wagner Zeitlos
-

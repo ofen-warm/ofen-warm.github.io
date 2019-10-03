@@ -6,6 +6,6 @@ titel_header = "AGB"
 title = "AGB"
 type = "page"
 [menu.footer]
-weight = 1
+weight = 2
 
 +++

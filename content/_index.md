@@ -20,7 +20,6 @@ content = "<p>Büro ofen Warm </p><p>Hauptstraße 35, 93348 Kirchdorf</p><p>Tele
 interner_linkname = "kontakt"
 titel = ""
 untertitel = ""
-[menu.main]
 [ofenmobil]
 bild = "/uploads/ofen-mobil.png"
 buttonbeschriftung = "Termin vereinbaren"
