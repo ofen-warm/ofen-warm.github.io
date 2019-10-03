@@ -21,14 +21,10 @@ content = "<p>Wir führen von der Olsberg GmbH die Marken „Königshütte“ un
 titel = "<p><em>PRODUKTE</em></p>"
 untertitel = "Ofen Warm"
 [produkte.produktarten]
-button_link = ""
-buttonbeschriftung = ""
-content_unten = ""
-titel_content_unten = ""
-[[produkte.produktarten.element]]
-bild = "/uploads/scheitholz.png"
-content = "<p>Mehr Info unter <a href=\"http://www.fireplace.de/\" title=\"\">www.fireplace.de</a> und unter <a href=\"https://www.koenigshuette-ofen.com/\" title=\"\">www.koenigshuette-ofen.com</a></p>"
-titel = "Scheitholz Kaminöfen"
+button_link = "mailto:info@ofen-warm.de?subject=Anfrage"
+buttonbeschriftung = "Jetzt ANFRAGEN"
+content_unten = "<p>Bevor Sie sich einen neuen Ofen kaufen, sprechen Sie mit Ihrem Bezirks-Schornsteinfeger und teilen Ihm ihr Vorhaben mit, da dieser ja Letzt endlich auch die neue Feuerstätte abnehmen muss. Die technischen Daten des neuen Wunsch-Ofens bekommen Sie für dieses Gespräch vorab von uns so dass ihr Bezirks-Schornsteinfeger sofort eine Entscheidung treffen kann.</p><p>Fragen Sie an, wir beraten Sie kompetent und finden mit Sicherheit den richtigen Ofen der für Ihr Vorhaben optimal passt so dass sie lange Freude daran haben werden.</p>"
+titel_content_unten = "Unser Tipp: "
 [[produkte.produktarten.element]]
 bild = "/uploads/pellet_ohnestrom.png"
 content = "<p>Mehr Info unter<a href=\"http://fireplace.de/images/downloadables/fireplace-elite-flyer-2018.pdf\" title=\"\"> www.fireplace.de/Elite</a></p>"
@@ -38,6 +34,10 @@ titel = "Pelletöfen ohne Strom"
 bild = "/uploads/pellet_mitstrom.png"
 content = "<p>Mehr Info unter <a href=\"https://www.koenigshuette-ofen.com/\" title=\"\">www.koenigshuette-ofen.com</a></p>"
 titel = "Pelletöfen mit Strom"
+[[produkte.produktarten.element]]
+bild = "/uploads/scheitholz.png"
+content = "<p>Mehr Info unter <a href=\"http://www.fireplace.de/\" title=\"\">www.fireplace.de</a> und unter <a href=\"https://www.koenigshuette-ofen.com/\" title=\"\">www.koenigshuette-ofen.com</a></p>"
+titel = "Scheitholz Kaminöfen"
 [[produkte.produkte]]
 bild = "/uploads/gravissimo.png"
 buttonbeschriftung = "weitere Infos"
