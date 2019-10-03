@@ -7,9 +7,13 @@ flammen = "/uploads/falmme_bottom.png"
 titel = "<p><em>ENTSCHEIDUNGS</em> HILFE</p>"
 untertitel = "Pelletofen"
 [[entscheidungshilfe.varianten]]
-bild = ""
+bild = "/uploads/pellet_ohnestrom.png"
+content = "<h3>PRO</h3><p>Der einfachste Ersatz für einen Scheitholz-Kaminofen:</p><ul><li><p>Alten Ofen entfernen und neuen Pelletofen aufstellen</p></li><li><p>Im Normalfall keine Kaminsanierung erforderlich</p></li><li><p>Brennt bis zu 16 Stunden selbstständig</p></li><li><p>Einstellbare Heizleistung von ca. 3 - 6 kW</p></li><li><p>Bequemer, effizienter und niedrigere Umweltbelastung</p></li><li><p>Wesentlich weniger Platzbedarf für Brennstoffvorrat</p></li><li><p>Keine Rauchgase und Ruß im Aufstellungsraum</p></li><li><p>Wichtigste Vorteile gegenüber Pelletofen mit Strom</p></li><li><p>Natürliche Konvektion, kein störendes Gebläse</p></li><li><p>Einfache Bedienung und Reinigungsarbeiten</p></li><li><p>Geeignet für Kamin-Mehrfachbelegung</p></li><li><p>Keine jährlichen Wartungskosten</p></li></ul><h3>CONTRA</h3><p>Wichtigste Nachteile gegenüber Pelletöfen mit Strom:</p><ul><li><p>Kein automatisches Starten</p></li><li><p>Keine Temperatursteuerung über Thermostat</p></li><li><p>Kein Raumluftgebläse</p></li><li><p>Keine Fernsteuerung über APP</p></li></ul>"
+titel = "<p><em>PELLETÖFEN</em><br>OHNE STROM</p>"
+[[entscheidungshilfe.varianten]]
+bild = "/uploads/pellet_mitstrom.png"
 content = "<h3>PRO</h3><p>Vorteile gegenüber Pelletöfen ohne Strom:</p><ul><li><p>Automatisches Starten</p></li><li><p>Mehrere Zeitfenster mit unterschiedlichen Temperaturen einstellbar</p></li><li><p>Temperatursteuerung über Thermostat</p></li><li><p>Mit Raumluftgebläse effektivere Luftumwälzung möglich</p></li><li><p>Fernsteuerung über APP</p></li></ul><h3>CONTRA</h3><p>Wichtigste Nachteile gegenüber Pelletöfen ohne Strom:</p><ul><li><p>Keine Kamin-Mehrfachbelegung im Regelfall möglich</p></li><li><p>Hörbares Warmluft-Gebläse, bei manchen Modellen aber auch ausschaltbar</p></li><li><p>Stromverbrauch</p></li><li><p>Höhere Unterhaltungskosten </p></li><li><p>Regelmäßiger Kundendienst durch einen autorisierten Fachmann empfehlenswert/notwendig (Nach ca. 2.000 Betriebsstunden)</p></li></ul>"
-titel = "<p><em>PELETÖFEN</em><br>MIT STROM</p>"
+titel = "<p><em>PELLETÖFEN</em><br>MIT STROM</p>"
 [kontakt]
 content = ""
 [ofenmobil]
