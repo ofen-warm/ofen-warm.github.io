@@ -16,3 +16,9 @@ fields:
     schema:
       format: html-blocks
   label: Titel
+- name: interner_linkname
+  type: text
+  config:
+    required: false
+  label: Interner Linkname
+  description: wird nicht auf der Webseite angezeigt, wird für Navigation benötigt
