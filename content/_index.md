@@ -2,6 +2,7 @@
 seo_description = "asd"
 title = "Home"
 type = "page"
+[menu.main]
 [entscheidungshilfe]
 flammen = "/uploads/falmme_bottom.png"
 titel = "<p><em>ENTSCHEIDUNGS</em> HILFE</p>"
