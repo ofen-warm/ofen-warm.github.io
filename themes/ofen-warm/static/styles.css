@@ -48,27 +48,7 @@ header #langselmobile img {
   width: 30px;
   height: 30px!important;
 }
-header #logotel {
-  padding: 1rem 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header #logotel #langsel {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding-bottom: 1rem;
-}
-header #logotel #langsel > * {
-  margin-left: 1rem;
-}
-@media (max-width: 720px) {
-  header #logotel #langsel {
-    display: none;
-  }
-}
-header #logotel .adrtel {
+header .adrtel {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
@@ -76,36 +56,45 @@ header #logotel .adrtel {
   font-size: 0.9rem;
 }
 @media (max-width: 720px) {
-  header #logotel .adrtel {
+  header .adrtel {
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start !important;
   }
-  header #logotel .adrtel > div {
+  header .adrtel > div {
     width: auto!important;
     justify-content: flex-end !important;
     margin-right: 1rem!important;
   }
 }
-header #logotel .adrtel > div {
+header .adrtel > div {
   display: inline-block;
-  flex: 1 1 auto;
+  flex: 0 1 auto;
   padding: 0 1rem 0 0;
   margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header #logotel .adrtel > div:last-child {
+header .adrtel > div:last-child {
   margin-right: 0;
   padding-right: 0;
   border: none;
 }
-header #logotel .adrtel > div > div {
+header .adrtel > div > div {
   flex: 1 0 auto;
 }
-header #logotel .adrtel > div img {
+header .adrtel > div img {
   margin: 0 1rem 0 0;
+}
+header .adrtel > div a {
+  color: #1e1e1e !important;
+}
+header #logotel {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 @media (max-width: 720px) {
   header #logotel {
