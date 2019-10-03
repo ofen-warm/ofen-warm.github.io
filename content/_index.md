@@ -10,12 +10,12 @@ varianten = []
 [kontakt]
 content = ""
 [ofenmobil]
-bild = ""
-buttonbeschriftung = ""
-buttonlink = ""
-content = ""
-titel = ""
-untertitel = ""
+bild = "/uploads/ofen-mobil.png"
+buttonbeschriftung = "Termin vereinbaren"
+buttonlink = "mailto:info@ofen-warm.de?subject=OfenMobil"
+content = "<p>Bei ernsthaftem Interesse an unseren Pelletöfen kommen wir auch mit unserem Ofenmobil direkt zu Ihnen und können diese beiden Öfen, für Sie natürlich kostenlos, vorführen.</p><ul><li><p>Pelletofen Gravissimo ohne Strom</p></li><li><p>Pelletofen Lima mit Strom</p></li></ul><p>Wir nehmen mit Ihnen die Öfen in Betrieb und zeigen Ihnen die Vorzüge, Unterschiede und Möglichkeiten.</p><p>Für die Vorführung, Dauer ca. 1 – 1,5 Stunden, benötigen wir von Ihnen lediglich einen 220 V Stromanschluss und eine Stellfläche (möglichst eben) für unser Gespann (Anhänger mit PKW, ca. 9 m Gesamtlänge)</p>"
+titel = "<p><em>OFEN MOBIL</em></p>"
+untertitel = "Jetzt testen"
 [produkte]
 content = "<p>Wir führen von der Olsberg GmbH die Marken „Königshütte“ und „Fireplace Elite“.</p><p>Unser Schwerpunkt liegt bei Pelletöfen ohne und mit Strom, aber auch Kaminöfen finden Sie bei uns. „Klasse statt Masse“ heißt unser Motto!</p>"
 titel = "<p><em>PRODUKTE</em></p>"
