@@ -49,60 +49,52 @@ header{
       height:30px!important;
     }
   }
+  .adrtel{
+    display:flex;
+    justify-content: flex-end;
+    align-items:flex-start;
+    flex:0 1 auto;
+    font-size:0.9rem;
+    @media (max-width: 720px){
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-start!important;
+      > div{
+        width:auto!important;
+        justify-content: flex-end!important;
+        margin-right:1rem!important;
+      }
+    }
+    > div{
+      display:inline-block;
+      flex:0 1 auto;
+      padding: 0 1rem 0 0;
+      margin: 0;
+      &:last-child{
+        margin-right:0;
+        padding-right:0;
+        border:none;
+      }
+      display:flex;
+      justify-content: space-between;
+      align-items:center;
+      > div{
+        flex:1 0 auto;
+      }
+      img{
+        margin: 0 1rem 0 0;
+      }
+      a{
+        color:@content!important;
+      }
+    }
+  }
   #logotel{
     padding:1rem 0;
     display:flex;
     justify-content: space-between;
     align-items: center;
-    #langsel{
-      display:flex;
-      justify-content: flex-end;
-      align-items: flex-start;
-      >*{
-        margin-left:1rem;
-      }
-      padding-bottom:1rem;
-      @media (max-width: 720px){
-        display:none;
-      }
-    }
-    .adrtel{
-      display:flex;
-      justify-content: flex-end;
-      align-items:flex-start;
-      flex:0 1 auto;
-      font-size:0.9rem;
-      @media (max-width: 720px){
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: flex-start!important;
-        > div{
-          width:auto!important;
-          justify-content: flex-end!important;
-          margin-right:1rem!important;
-        }
-      }
-      > div{
-        display:inline-block;
-        flex:1 1 auto;
-        padding: 0 1rem 0 0;
-        margin: 0;
-        &:last-child{
-          margin-right:0;
-          padding-right:0;
-          border:none;
-        }
-        display:flex;
-        justify-content: space-between;
-        align-items:center;
-        > div{
-          flex:1 0 auto;
-        }
-        img{
-          margin: 0 1rem 0 0;
-        }
-      }
-    }
+    
     @media (max-width: 720px){
       padding:1rem 0;
         display:flex;
