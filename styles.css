@@ -1,0 +1,303 @@
+body {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif, serif;
+  color: #1e1e1e;
+  background: white;
+}
+body *:not(i) {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif important;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Blippo W01 Black', Arial, Helvetica, sans-serif;
+}
+a {
+  color: #e77817;
+}
+a:hover {
+  text-decoration: underline;
+  color: #e77817;
+}
+header #headermenuw {
+  background: white;
+  border-top: 1px solid #e77817;
+  border-bottom: 1px solid #e77817;
+}
+@media (max-width: 720px) {
+  header .logo {
+    height: 60px;
+  }
+}
+header .logow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+@media (max-width: 720px) {
+  header .logow {
+    width: 70vw;
+  }
+}
+@media (min-width: 720px) {
+  header #langselmobile {
+    display: none;
+  }
+}
+header #langselmobile img {
+  width: 30px;
+  height: 30px!important;
+}
+header #logotel {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header #logotel #langsel {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-bottom: 1rem;
+}
+header #logotel #langsel > * {
+  margin-left: 1rem;
+}
+@media (max-width: 720px) {
+  header #logotel #langsel {
+    display: none;
+  }
+}
+header #logotel .adrtel {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex: 0 1 auto;
+  font-size: 0.9rem;
+}
+header #logotel .adrtel .headermenuitem {
+  display: none;
+}
+@media (max-width: 720px) {
+  header #logotel .adrtel {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start !important;
+  }
+  header #logotel .adrtel > div {
+    width: auto!important;
+    justify-content: flex-end !important;
+    margin-right: 1rem!important;
+  }
+  header #logotel .adrtel .headermenuitem {
+    display: block;
+    margin: 0 auto!important;
+  }
+}
+header #logotel .adrtel > div {
+  display: inline-block;
+  flex: 1 1 auto;
+  padding: 0 1rem 0 0;
+  margin: 0;
+  border-right: 1px solid #e77817;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header #logotel .adrtel > div:last-child {
+  margin-right: 0;
+  padding-right: 0;
+  border: none;
+}
+header #logotel .adrtel > div > div {
+  flex: 1 0 auto;
+}
+header #logotel .adrtel > div img {
+  margin: 0 1rem 0 0;
+}
+@media (max-width: 720px) {
+  header #logotel {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column!important;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  header #logotel .adrtel {
+    margin-top: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex: 0 1 auto;
+  }
+  header #logotel .adrtel > div {
+    display: inline-block;
+    flex: 0 1 auto;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    border-right: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  header #logotel .adrtel > div:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border: none;
+  }
+  header #logotel .adrtel > div img {
+    margin: 0 0.4rem 0 0;
+    height: 23px;
+  }
+}
+header #mnt {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+@media (max-width: 720px) {
+  header #mnt {
+    display: block;
+  }
+}
+header #headermenumobil {
+  display: none;
+}
+@media (max-width: 720px) {
+  header #headermenumobil {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-height: 0px;
+    overflow: hidden;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+  }
+  header #headermenumobil.mobvis {
+    max-height: 1000px;
+    padding: 0.5rem 1rem!important;
+    transition-property: all;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+    opacity: 1;
+  }
+  header #headermenumobil .headermenuitem {
+    width: 50%;
+    color: #e77817;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: left;
+  }
+  header #headermenumobil .headermenuitem:nth-child(even) {
+    text-align: right;
+  }
+}
+header #headermenu {
+  display: flex;
+  justify-content: space-between;
+}
+header #headermenu > div {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+}
+@media (max-width: 720px) {
+  header #headermenu > div {
+    display: none!important;
+  }
+}
+.headermenuitem {
+  flex: 0 1 auto;
+  color: #e77817;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 3rem;
+  margin-left: -1px;
+  border-right: 1px solid #e77817;
+  word-wrap: none;
+  white-space: nowrap;
+  position: relative;
+}
+.headermenuitem .sub-menu {
+  width: 100vw;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  margin-top: -1px;
+  text-align: left;
+  line-height: 1.3em;
+  z-index: 99;
+}
+.headermenuitem .sub-menu .cols {
+  columns: 4;
+  background: #e77817;
+  padding: 1rem;
+}
+.headermenuitem .sub-menu .cols .sub-menu-item {
+  margin: 0 0 1rem 0;
+}
+.headermenuitem .sub-menu .cols .sub-menu-item > a {
+  color: #1e1e1e;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+.headermenuitem .sub-menu .cols .sub-menu-item .sub-sub-menu-item a {
+  color: #1e1e1e;
+  text-transform: none;
+  font-size: 0.95rem;
+  line-height: 1.3em;
+}
+.headermenuitem .sub-menu .cols .sub-menu-item .sub-sub-menu-item a:hover {
+  color: #e77817;
+  text-decoration: underline;
+}
+.headermenuitem .sub-menu .cols .sub-menu-item .sub-sub-menu-item::before {
+  content: '>>';
+  color: #1e1e1e;
+  margin: 0 0.25rem 0 0;
+  font-size: 0.85rem;
+}
+.headermenuitem:hover {
+  background: #e77817;
+}
+.headermenuitem:hover a {
+  color: #e77817;
+  text-decoration: none;
+}
+.headermenuitem:hover .sub-menu {
+  height: auto;
+}
+footer {
+  display: block;
+  background: #e77817;
+}
+footer.ui.container {
+  margin: 1rem 0 0 0!important;
+}
+footer .footermenu {
+  display: flex!important;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 0;
+}
+footer .footermenu a {
+  color: white!important;
+  font-size: 0.8rem;
+  padding: 0 0.8rem 0 0;
+  margin: 0 0.8rem 0 0;
+  border-right: 1px solid white;
+  line-height: 1rem;
+}
+footer .footermenu a:last-child {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
