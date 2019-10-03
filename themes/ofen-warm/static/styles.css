@@ -75,9 +75,6 @@ header #logotel .adrtel {
   flex: 0 1 auto;
   font-size: 0.9rem;
 }
-header #logotel .adrtel .headermenuitem {
-  display: none;
-}
 @media (max-width: 720px) {
   header #logotel .adrtel {
     flex-wrap: wrap;
@@ -89,17 +86,12 @@ header #logotel .adrtel .headermenuitem {
     justify-content: flex-end !important;
     margin-right: 1rem!important;
   }
-  header #logotel .adrtel .headermenuitem {
-    display: block;
-    margin: 0 auto!important;
-  }
 }
 header #logotel .adrtel > div {
   display: inline-block;
   flex: 1 1 auto;
   padding: 0 1rem 0 0;
   margin: 0;
-  border-right: 1px solid #e77817;
   display: flex;
   justify-content: space-between;
   align-items: center;

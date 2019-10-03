@@ -15,13 +15,6 @@
         </div>
       </div>
       <div>
-        <div id="langsel">
-          {{range $t.Params.sprachen}}
-          <a href="{{.link}}" title="{{.bezeichnung}}">
-            <img class="logo" src="{{partial "imgUrl" (dict "img" .icon "params" "q_100" )}}" />
-          </a>
-          {{end}}
-        </div>
         <div class="adrtel">
           <div>
             <img src="{{partial "imgUrl" (dict "img" $t.Params.icon_email "params" "q_100" )}}" />
@@ -30,15 +23,6 @@
           <div>
             <img src="{{partial "imgUrl" (dict "img" $t.Params.icon_tel "params" "q_100" )}}" />
             <div>{{$t.Params.tel|safeHTML}}</div>
-          </div>
-          <div>
-            <img src="{{partial "imgUrl" (dict "img" $t.Params.icon_adresse "params" "q_100" )}}" />
-            <div>{{$t.Params.adresse|safeHTML}}</div>
-          </div>
-          <div class="headermenuitem green">
-            <a href="{{ $t.Params.angebot_button.link }}">
-                {{ $t.Params.angebot_button.beschriftung | safeHTML }}
-            </a>
           </div>
         </div>
       </div>
