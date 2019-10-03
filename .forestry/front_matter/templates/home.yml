@@ -200,10 +200,62 @@ fields:
 - name: entscheidungshilfe
   type: field_group
   config: {}
+  fields:
+  - name: t
+    type: include
+    config: {}
+    template: titeluntertitel
+    label: T
+  - name: varianten
+    type: field_group_list
+    fields:
+    - name: bild
+      type: file
+      config:
+        maxSize: 250
+      label: Bild
+    - name: titel
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: true
+        schema:
+          format: html-blocks
+      label: Titel
+    - name: content
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: true
+        schema:
+          format: html-blocks
+      label: Content
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Varianten
+  - name: flammen
+    type: file
+    config:
+      maxSize: 250
+    label: Flammen
   label: Entscheidungshilfe
 - name: kontakt
   type: field_group
   config: {}
+  fields:
+  - name: content
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Content
   label: Kontakt
 pages:
 - content/_index.md
