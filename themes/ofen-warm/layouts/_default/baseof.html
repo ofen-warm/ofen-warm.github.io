@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default " de " }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{replaceRE "\\[.+\\]" "" .}}{{ end }}{{ end }}</title>
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <link rel="shortcut icon" type="image/ico" href="/favicon.png">
+  <meta name="viewport" content="width=device-width,user-scalable=no">
+  <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/f3f29e6f-8077-4bf8-90e0-c3271d52330d.css"/>
+  <link rel="stylesheet" href="{{ $.Site.BaseURL }}/lib/semantic.min.css">
+  <link rel="stylesheet" href="{{ $.Site.BaseURL }}/styles.css">
+  <script type="text/javascript" src="{{ $.Site.BaseURL }}/lib/jquery.min.js"></script>
+  <script type="text/javascript" src="{{ $.Site.BaseURL }}/lib/cloudinary-core-shrinkwrap.min.js"></script>
+</head>
+
+<body>
+  {{ partial "header.html" . }}
+  <main role="main">
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+
+  <script type="text/javascript" src="{{ $.Site.BaseURL }}/lib/semantic.min.js"></script>
+  <script type="text/javascript">
+    var cl = cloudinary.Cloudinary.new({cloud_name: "b-coding"}); 
+    cl.responsive();
+</script>
+</body>
+
+</html>

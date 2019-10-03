@@ -1,0 +1,4 @@
+baseURL = "https://ofen-warm.github.io"
+languageCode = "de-de"
+theme = "ofen-warm"
+title = "ofen-warm"
