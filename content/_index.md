@@ -23,8 +23,12 @@ untertitel = "Ofen Warm"
 [produkte.produktarten]
 button_link = ""
 buttonbeschriftung = ""
-element = []
 titel_content_unten = ""
+[[produkte.produktarten.element]]
+bild = "/uploads/pellet_ohnestrom.png"
+content = "<p>Mehr Info unter<a href=\"http://fireplace.de/images/downloadables/fireplace-elite-flyer-2018.pdf\" title=\"\"> www.fireplace.de/Elite</a></p>"
+content_unten = ""
+titel = "Pelletöfen ohne Strom"
 [[produkte.produkte]]
 bild = "/uploads/gravissimo.png"
 buttonbeschriftung = "weitere Infos"
