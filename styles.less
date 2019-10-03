@@ -72,9 +72,6 @@ header{
       align-items:flex-start;
       flex:0 1 auto;
       font-size:0.9rem;
-      .headermenuitem{
-        display:none;
-      }
       @media (max-width: 720px){
         flex-wrap: wrap;
         align-items: center;
@@ -84,17 +81,12 @@ header{
           justify-content: flex-end!important;
           margin-right:1rem!important;
         }
-        .headermenuitem{
-          display:block;
-          margin:0 auto!important;
-        }
       }
       > div{
         display:inline-block;
         flex:1 1 auto;
         padding: 0 1rem 0 0;
         margin: 0;
-        border-right:1px solid @grey;
         &:last-child{
           margin-right:0;
           padding-right:0;
