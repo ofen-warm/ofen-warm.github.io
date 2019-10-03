@@ -23,12 +23,21 @@ untertitel = "Ofen Warm"
 [produkte.produktarten]
 button_link = ""
 buttonbeschriftung = ""
+content_unten = ""
 titel_content_unten = ""
+[[produkte.produktarten.element]]
+bild = "/uploads/scheitholz.png"
+content = "<p>Mehr Info unter <a href=\"http://www.fireplace.de/\" title=\"\">www.fireplace.de</a> und unter <a href=\"https://www.koenigshuette-ofen.com/\" title=\"\">www.koenigshuette-ofen.com</a></p>"
+titel = "Scheitholz Kaminöfen"
 [[produkte.produktarten.element]]
 bild = "/uploads/pellet_ohnestrom.png"
 content = "<p>Mehr Info unter<a href=\"http://fireplace.de/images/downloadables/fireplace-elite-flyer-2018.pdf\" title=\"\"> www.fireplace.de/Elite</a></p>"
 content_unten = ""
 titel = "Pelletöfen ohne Strom"
+[[produkte.produktarten.element]]
+bild = "/uploads/pellet_mitstrom.png"
+content = "<p>Mehr Info unter <a href=\"https://www.koenigshuette-ofen.com/\" title=\"\">www.koenigshuette-ofen.com</a></p>"
+titel = "Pelletöfen mit Strom"
 [[produkte.produkte]]
 bild = "/uploads/gravissimo.png"
 buttonbeschriftung = "weitere Infos"
