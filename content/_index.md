@@ -17,6 +17,9 @@ content = "<h3>PRO</h3><p>Vorteile gegenüber Pelletöfen ohne Strom:</p><ul><li
 titel = "<p><em>PELLETÖFEN</em><br>MIT STROM</p>"
 [kontakt]
 content = "<p>Büro ofen Warm </p><p>Hauptstraße 35, 93348 Kirchdorf</p><p>Telefon 09444/9774571 | info@ofen-warm.de</p>"
+interner_linkname = "kontakt"
+titel = ""
+untertitel = ""
 [menu.main]
 [ofenmobil]
 bild = "/uploads/ofen-mobil.png"
