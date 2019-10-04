@@ -31,6 +31,7 @@
             {{if eq .bild_rechts true}}
             <div class="column left tx six wide">
               {{partial "titleSubtitle" (dict "sub" true "title" .titel "subtitle" .untertitel)}}
+              <a class="infobutton" href="{{.buttonlink}}">{{.buttonbeschriftung}}</a>
             </div>
             <div class="column img ten wide">
               <img src="{{partial "imgUrl" (dict "img" .bild "params" "q_100" )}}" />
@@ -41,11 +42,39 @@
             </div>
             <div class="column right tx six wide">
               {{partial "titleSubtitle" (dict "sub" true "title" .titel "subtitle" .untertitel)}}
+              <a class="infobutton" href="{{.buttonlink}}">{{.buttonbeschriftung}}</a>
             </div>
             {{end}}
           </div>
         </div>
         {{end}}
+      </div>
+    </div>
+    {{with .produktarten}}
+    <div id="pac" class="ui container">
+      <div class="ui three column grid">
+        {{range .element}}
+          <div class="column">
+              <img src="{{partial "imgUrl" (dict "img" .bild "params" "q_100" )}}" />
+              <h3>{{.titel}}</h3>
+              <div>{{.content|safeHTML}}</div>
+          </div>
+        {{end}}
+      </div>
+      <h4>{{.titel_content_unten}}</h4>
+      <div>{{.content_unten|safeHTML}}</div>
+      <a class="infobutton" href="{{.buttonlink}}">{{.buttonbeschriftung}}</a>
+    </div>
+    {{end}}
+  </section>
+  {{end}}
+  {{with .Params.service}}
+  <section id="{{.interner_linkname}}" class="ui container">
+      {{partial "titleSubtitle" (dict "top" false "title" .titel "subtitle" .untertitel)}}
+    <div class="ui two column grid">
+      <div class="column" style="background:url({{partial "imgUrl" (dict "img" .bild "params" "q_100" )}}) left bottom no-repeat; background-size:contain;"></div>
+      <div class="column" style="padding:2rem 0;">
+        {{.content|safeHTML}}
       </div>
     </div>
   </section>

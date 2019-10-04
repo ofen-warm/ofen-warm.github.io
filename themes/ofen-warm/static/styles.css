@@ -198,7 +198,7 @@ footer .footermenu a:last-child {
 }
 .ts h2 {
   font-size: 4rem;
-  color: #1e1e1e;
+  color: #727272;
   margin: 0;
   text-align: center;
 }
@@ -218,7 +218,7 @@ footer .footermenu a:last-child {
 }
 .ts.sub h3 {
   font-size: 2.5rem;
-  color: #1e1e1e;
+  color: #727272;
   margin: 0;
   text-align: center;
   font-family: 'Blippo W01 Black', Arial, Helvetica, sans-serif;
@@ -233,19 +233,41 @@ footer .footermenu a:last-child {
 section {
   padding: 2rem 0 2rem 0;
 }
+.infobutton {
+  background: #e77817;
+  color: white;
+  text-decoration: none!important;
+  padding: 0.75rem 2rem;
+  display: inline-block;
+  font-weight: bold!important;
+  margin: 1rem 0;
+}
+.infobutton:hover {
+  color: white;
+}
 #home .headimg {
   height: 40vh;
   margin: 2rem 0 0 0;
 }
 #home #produkte {
-  background: rgba(114, 114, 114, 0.1);
+  padding: 0 0 2rem 0;
+}
+#home #produkte #plist {
+  margin-top: -300px;
 }
 #home #produkte #tc {
-  padding: 0 0 300px 0;
+  padding: 2rem 0 300px 0;
+  background: rgba(114, 114, 114, 0.1);
+}
+#home #produkte .left {
+  align-items: flex-end;
 }
 #home #produkte .left h4,
 #home #produkte .left h3 {
   text-align: right!important;
+}
+#home #produkte .right {
+  align-items: flex-start;
 }
 #home #produkte .right h4,
 #home #produkte .right h3 {
@@ -259,4 +281,43 @@ section {
 }
 #home #produkte .column img {
   max-width: 100%;
+}
+#home #produkte #pac {
+  background: rgba(114, 114, 114, 0.3);
+  padding: 2rem 2rem 0 2rem;
+  margin: 2rem 0 -1rem 0;
+  text-align: center;
+}
+#home #produkte #pac .infobutton {
+  margin: 1rem 0 -2rem 0 !important;
+}
+#home #produkte #pac h4 {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif !important;
+  color: #e77817;
+  font-weight: bold;
+  margin: 0;
+  font-size: 1.6rem;
+}
+#home #produkte #pac .grid img {
+  width: 40%;
+  margin-right: -12%;
+}
+#home #produkte #pac .grid .column {
+  display: flex!important;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+#home #produkte #pac .grid .column a {
+  color: #1e1e1e;
+}
+#home #produkte #pac .grid .column a:hover {
+  text-decoration: none;
+  color: #e77817;
+}
+#home #produkte #pac .grid h3 {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif !important;
+  color: #e77817;
+  font-weight: bold;
 }
