@@ -77,6 +77,9 @@ fields:
       config:
         required: false
       label: Buttonlink
+    - name: bild_rechts
+      type: boolean
+      label: Bild rechts
     config:
       min: 
       max: 
