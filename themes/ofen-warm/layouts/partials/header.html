@@ -12,19 +12,12 @@
       </div>
     </div>
   </div>
-  <div>
+  <div class="ui container ">
     <div id="headermenuw">
       <div class="logow">
         <a href="/" id="logolink">
           <img class="logo" src="{{partial "imgUrl" (dict "img" $t.Params.logo "params" "q_100" )}}" />
         </a>
-        <div id="langselmobile">
-          {{range $t.Params.sprachen}}
-          <a href="{{.link}}" title="{{.bezeichnung}}">
-            <img class="logo" src="{{partial "imgUrl" (dict "img" .icon "params" "q_100" )}}" />
-          </a>
-          {{end}}
-        </div>
       </div>
       <div id="headermenumobil" class="mobinit ui container">
         {{ range .Site.Menus.mobil }}
@@ -36,95 +29,14 @@
         {{end}}
       </div>
       <div id="headermenu" class=" ui container">
-        <div>
           {{ range .Site.Menus.main }}
           <div class="headermenuitem {{ if or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .) }}active{{ end }}
-              {{if eq .Title "Produkte"}}{{ range $site.Menus.produkte }}{{ if or ($currentPage.IsMenuCurrent "produkte" .) ($currentPage.HasMenuCurrent "produkte" .) }}active{{ end }}{{end}}{{end}}
               ">
             <a href="{{ .URL }}" title="{{ .Title }}">
               <span>{{ .Name | safeHTML }}</span>
             </a>
-            {{if eq .Title "Anwendungsbereiche"}}
-            <div class="sub-menu">
-              <div class="ui container" style="position:relative;">
-                <div class="cols">
-                  {{ range $site.Menus.anwendungsbereiche }}
-                  <div class="sub-menu-item {{ if $currentPage.IsMenuCurrent "anwendungsbereiche" . }}active{{ end }}">
-                    <a href="{{ .URL }}" title="{{ .Title }}">{{replaceRE "\\[.+\\]" "" .Name}}</a>
-                    {{if eq .Title "Tierernährung"}}
-                    {{ range $site.Menus.ab_tierernaehrung }}
-                    <div
-                      class="sub-sub-menu-item {{ if $currentPage.IsMenuCurrent "anwendungsbereiche" . }}active{{ end }}">
-                      <a href="{{ .URL }}" title="{{ .Title }}">{{replaceRE "\\[.+\\]" "" .Name}}</a>
-                    </div>
-                    {{ end }}
-                    {{ end }}
-                    {{if eq .Title "Garten- & Landschaftsbau"}}
-                    {{ range $site.Menus.ab_gala }}
-                    <div
-                      class="sub-sub-menu-item {{ if $currentPage.IsMenuCurrent "anwendungsbereiche" . }}active{{ end }}">
-                      <a href="{{ .URL }}" title="{{ .Title }}">{{replaceRE "\\[.+\\]" "" .Name}}</a>
-                    </div>
-                    {{ end }}
-                    {{ end }}
-                    {{if eq .Title "Technische Anwendungen"}}
-                    {{ range $site.Menus.ab_technische_anwendungen }}
-                    <div
-                      class="sub-sub-menu-item {{ if $currentPage.IsMenuCurrent "anwendungsbereiche" . }}active{{ end }}">
-                      <a href="{{ .URL }}" title="{{ .Title }}">{{replaceRE "\\[.+\\]" "" .Name}}</a>
-                    </div>
-                    {{ end }}
-                    {{ end }}
-                    {{if eq .Title "Landwirtschaft"}}
-                    {{ range $site.Menus.ab_landwirtschaft }}
-                    <div
-                      class="sub-sub-menu-item {{ if $currentPage.IsMenuCurrent "anwendungsbereiche" . }}active{{ end }}">
-                      <a href="{{ .URL }}" title="{{ .Title }}">{{replaceRE "\\[.+\\]" "" .Name}}</a>
-                    </div>
-                    {{ end }}
-                    {{ end }}
-                    {{if eq .Title "Pharmazie"}}
-                    {{ range $site.Menus.ab_pharmazie }}
-                    <div
-                      class="sub-sub-menu-item {{ if $currentPage.IsMenuCurrent "anwendungsbereiche" . }}active{{ end }}">
-                      <a href="{{ .URL }}" title="{{ .Title }}">{{replaceRE "\\[.+\\]" "" .Name}}</a>
-                    </div>
-                    {{ end }}
-                    {{ end }}
-                  </div>
-                  {{ end }}
-                </div>
-              </div>
-            </div>
-            {{ end }}
-            {{if eq .Title "Produkte"}}
-            <div class="sub-menu">
-              <div class="ui container" style="position:relative;">
-                <div class="cols">
-                  {{ range $site.Menus.produkte }}
-                  <div class="sub-menu-item {{ if $currentPage.IsMenuCurrent "produkte" . }}active{{ end }}">
-                    <a href="/produkte#{{ .Title }}" title="{{ .Title }}">{{replaceRE "\\[.+\\]" "" .Name}}</a>
-                    {{ if .HasChildren }}
-                    {{ range .Children }}
-                    <div class="sub-sub-menu-item {{ if $currentPage.IsMenuCurrent "produkte" . }}active{{ end }}">
-                      <a href="{{ .URL }}" title="{{ .Title }}">{{replaceRE "\\[.+\\]" "" .Name}}</a>
-                    </div>
-                    {{ end }}
-                    {{end}}
-                  </div>
-                  {{ end }}
-                </div>
-              </div>
-            </div>
-            {{ end }}
           </div>
           {{ end }}
-        </div>
-        <div class="headermenuitem green">
-          <a href="{{ $t.Params.angebot_button.link }}">
-            {{ $t.Params.angebot_button.beschriftung | safeHTML }}
-          </a>
-        </div>
       </div>
     </div>
     <div id="mnt">

@@ -1,0 +1,11 @@
+{{if .top}}
+<div class="ts top">
+  <h2>{{.subtitle}}</h2>
+  <h1>{{.title|safeHTML}}</h1>
+</div>
+{{else}}
+<div class="ts">
+  <h3>{{.subtitle}}</h3>
+  <h2>{{.title|safeHTML}}</h2>
+</div>
+{{end}}

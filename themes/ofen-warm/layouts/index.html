@@ -1,28 +1,64 @@
 {{ define "main" }}
 {{$p:=.}}
-{{$e:=.}}
-{{ range where .Data.Pages "Section" "events" }}
-      {{if eq .Params.startseite true}}
-      {{$e = .}}
-      {{end}}
-    {{ end }}
 <div id="home">
+  {{with .Params.ueber_uns}}
+
+  <div class="headimg"
+    style="background:url({{partial "imgUrl" (dict "img" .bild "params" "q_100" )}}) center center no-repeat; background-size:cover;">
+  </div>
+  <section id="{{.interner_linkname}}">
+    <div class="ui container">
+      {{partial "titleSubtitle" (dict "top" true "title" .titel "subtitle" .untertitel)}}
+      <div class="ccontent">
+        {{.content|safeHTML}}
+      </div>
+    </div>
+  </section>
+  {{end}}
+  {{with .Params.produkte}}
+  <section id="{{.interner_linkname}}">
+    <div id="tc" class="ui container">
+      {{partial "titleSubtitle" (dict "top" true "title" .titel "subtitle" .untertitel)}}
+      <div class="ccontent">
+        {{.content|safeHTML}}
+      </div>
+    </div>
+    <div class="ui container">
+      <div id="plist" class="ui grid two column">
+        {{range .produkte}}
+        <div class="prod column">
+          <div class="ui grid two column">
+            <div class="column">
+                {{partial "titleSubtitle" (dict "top" true "title" .titel "subtitle" .untertitel)}}
+            </div>
+            <div class="column">
+                <img src="{{partial "imgUrl" (dict "img" .bild "params" "q_100" )}}" />
+              </div>
+          </div>
+        </div>
+        {{end}}
+      </div>
+    </div>
+  </section>
+  {{end}}
   <div class="wgrey">
     <div id="slidercontainer">
       <ul id="slider">
         {{ range $x,$img := .Params.slider }}
         <li>
-          <div class="slideritem {{if eq $img.image_slide true}}full{{else}}ui container{{end}}" style="background:url({{partial "imgUrl" (dict "img" .bild "params" "q_100" )}}) center center no-repeat;">
+          <div class="slideritem {{if eq $img.image_slide true}}full{{else}}ui container{{end}}"
+            style="background:url({{partial "imgUrl" (dict "img" .bild "params" "q_100" )}}) center center no-repeat;">
             <div class="ptxt {{if eq $img.image_slide true}}full{{else}}ui container{{end}}">
-                <a class="titles {{if eq $img.image_slide true}}full{{end}}" href="{{with $img.titel_und_link.link}}{{relref $p . }}{{end}}">
-                  <h4>{{$img.titel_und_link.untertitel|safeHTML}}</h4>
-                  <h3>{{$img.titel_und_link.titel|safeHTML}}</h3>
-                </a>
-                {{with $img.titel_und_link.link}}
-                <a class="morebutton_slider" href="{{relref $p . }}">
-                    <div class="txt">{{$img.titel_und_link.linkbeschriftung}}</div>
-                </a>
-                {{end}}
+              <a class="titles {{if eq $img.image_slide true}}full{{end}}"
+                href="{{with $img.titel_und_link.link}}{{relref $p . }}{{end}}">
+                <h4>{{$img.titel_und_link.untertitel|safeHTML}}</h4>
+                <h3>{{$img.titel_und_link.titel|safeHTML}}</h3>
+              </a>
+              {{with $img.titel_und_link.link}}
+              <a class="morebutton_slider" href="{{relref $p . }}">
+                <div class="txt">{{$img.titel_und_link.linkbeschriftung}}</div>
+              </a>
+              {{end}}
             </div>
           </div>
         </li>
@@ -33,89 +69,92 @@
   <div class="ui container">
     <div id="icons">
       {{range .Params.icon_info}}
+      <div>
         <div>
-          <div>
-              <img src="{{partial "imgUrl" (dict "img" .icon "params" "q_100" )}}" alt="{{.titel}}"/>
-          </div>
-          <div>
-            <h4>{{.titel}}</h4>
-            {{.content|safeHTML}}
-          </div>
+          <img src="{{partial "imgUrl" (dict "img" .icon "params" "q_100" )}}" alt="{{.titel}}" />
         </div>
+        <div>
+          <h4>{{.titel}}</h4>
+          {{.content|safeHTML}}
+        </div>
+      </div>
       {{end}}
     </div>
   </div>
   <div class="ui container">
     {{with .Params.produkte}}
-      <div id="produkte">
-        <h3>{{.untertitel}}</h3>
-        <h2>{{.titel}}</h2>
-        <div id="pelements" class="ui equal width centered doubling stackable grid ">
-          {{range .links}}
-          <div class="column">
-            <a href="{{relref $p .link }}">
-              <div>
-                  <img src="{{partial "imgUrl" (dict "img" .icon "params" "q_100" )}}" alt="{{.titel}}"/>
+    <div id="produkte">
+      <h3>{{.untertitel}}</h3>
+      <h2>{{.titel}}</h2>
+      <div id="pelements" class="ui equal width centered doubling stackable grid ">
+        {{range .links}}
+        <div class="column">
+          <a href="{{relref $p .link }}">
+            <div>
+              <img src="{{partial "imgUrl" (dict "img" .icon "params" "q_100" )}}" alt="{{.titel}}" />
+            </div>
+            <div class="agributton">
+              <div class="iconw">
+                <i class="icon chevron right"></i>
               </div>
-              <div class="agributton">
-                <div class="iconw">
-                    <i class="icon chevron right"></i>
-                </div>
-                <div class="text">
-                  {{.titel}}
-                </div>
+              <div class="text">
+                {{.titel}}
               </div>
-            </a>
-          </div>
-          {{end}}
+            </div>
+          </a>
         </div>
+        {{end}}
       </div>
+    </div>
     {{end}}
   </div>
   <div class="wgrey">
     <div class="ui container">
       {{with .Params.anwendungsbereiche}}
-        <div id="anwendungsbereiche">
-          <h3>{{.untertitel}}</h3>
-          <h2>{{.titel}}</h2>
-          <div class="pelements">
-            {{range .bereiche}}
-            <div class="column">
-              <div class="abcard">
-                  <a href="{{relref $p .link }}">
-                <div class="headimg" style="background:url({{partial "imgUrl" (dict "img" .bild "params" "q_100" )}}) center center no-repeat;"></div>
-                <div class="icon" style="background:url({{partial "imgUrl" (dict "img" .icon "params" "q_100" )}}) center center no-repeat;"/></div>
-                  </a>
-                <div class="inner">
-                    <a href="{{relref $p .link }}">
-                    <h4>{{.titel}}</h4>
-                    </a>
-                    <div class="content">{{.content|safeHTML}}</div>
-                    <a href="{{relref $p .link }}">{{.linkbeschriftung}}</a>
-                </div>
-              </div>
+      <div id="anwendungsbereiche">
+        <h3>{{.untertitel}}</h3>
+        <h2>{{.titel}}</h2>
+        <div class="pelements">
+          {{range .bereiche}}
+          <div class="column">
+            <div class="abcard">
+              <a href="{{relref $p .link }}">
+
+                <div class="icon"
+                  style="background:url({{partial "imgUrl" (dict "img" .icon "params" "q_100" )}}) center center no-repeat;" />
             </div>
-            {{end}}
+            </a>
+            <div class="inner">
+              <a href="{{relref $p .link }}">
+                <h4>{{.titel}}</h4>
+              </a>
+              <div class="content">{{.content|safeHTML}}</div>
+              <a href="{{relref $p .link }}">{{.linkbeschriftung}}</a>
+            </div>
           </div>
         </div>
-      {{end}}
+        {{end}}
+      </div>
+    </div>
+    {{end}}
+  </div>
+</div>
+<div class="ui container">
+  {{with .Params.ueber_uns}}
+  <div id="about">
+    <div class="ui two column grid stackable">
+      <div class="column"
+        style="background:url({{partial "imgUrl" (dict "img" .bild "params" "q_100" )}}) center center no-repeat;">
+
+      </div>
+      <div class="column">
+        <h3>{{.untertitel}}</h3>
+        <h2>{{.titel}}</h2>
+        {{.content|safeHTML}}
+      </div>
     </div>
   </div>
-  <div class="ui container">
-      {{with .Params.ueber_uns}}
-        <div id="about">
-          <div class="ui two column grid stackable">
-            <div class="column" style="background:url({{partial "imgUrl" (dict "img" .bild "params" "q_100" )}}) center center no-repeat;">
-              
-            </div>
-            <div class="column">
-                <h3>{{.untertitel}}</h3>
-                <h2>{{.titel}}</h2>
-                {{.content|safeHTML}}
-            </div>
-          </div>
-        </div>
-      {{end}}
-    </div>
+  {{end}}
+</div>
 </div>
 {{ end }}

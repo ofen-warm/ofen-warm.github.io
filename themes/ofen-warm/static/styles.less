@@ -1,5 +1,6 @@
 @orange:rgb(231,120,23);
-@grey:rgb(231,120,23);
+@grey:rgb(114,114,114);
+@grey_light:rgba(114,114,114,0.1);
 @content: rgb(30,30,30);
 
 
@@ -13,6 +14,12 @@ body{
 }
 h1,h2,h3,h4{
   font-family: 'Blippo W01 Black',Arial, Helvetica, sans-serif;
+  font-weight:normal;
+  color:@grey;
+  em{
+    font-style: normal;
+    color:@orange;
+  }
 }
 a{
   color:@orange;
@@ -22,12 +29,8 @@ a{
   }
 }
 header{
-  #headermenuw{
-    background:white;
-    border-top:1px solid @grey;
-    border-bottom:1px solid @grey;
-  }
   .logo{
+    height:140px;
     @media (max-width: 720px){
       height:60px;
     }
@@ -40,21 +43,13 @@ header{
       width:70vw;
     }
   }
-  #langselmobile{
-    @media (min-width: 720px){
-      display:none;
-    }
-    img{
-      width:30px;
-      height:30px!important;
-    }
-  }
   .adrtel{
     display:flex;
     justify-content: flex-end;
     align-items:flex-start;
     flex:0 1 auto;
     font-size:0.9rem;
+    padding:0.5rem 0;
     @media (max-width: 720px){
       flex-wrap: wrap;
       align-items: center;
@@ -63,6 +58,7 @@ header{
         width:auto!important;
         justify-content: flex-end!important;
         margin-right:1rem!important;
+        align-items: center;
       }
     }
     > div{
@@ -70,11 +66,6 @@ header{
       flex:0 1 auto;
       padding: 0 1rem 0 0;
       margin: 0;
-      &:last-child{
-        margin-right:0;
-        padding-right:0;
-        border:none;
-      }
       display:flex;
       justify-content: space-between;
       align-items:center;
@@ -89,48 +80,11 @@ header{
       }
     }
   }
-  #logotel{
-    padding:1rem 0;
+  #headermenuw{
     display:flex;
     justify-content: space-between;
-    align-items: center;
-    
-    @media (max-width: 720px){
-      padding:1rem 0;
-        display:flex;
-        flex-direction: column!important;
-        justify-content: flex-start;
-        align-items: flex-start;
-        .adrtel{
-          margin-top:1rem;
-          display:flex;
-          width:100%;
-          justify-content:space-between;
-          flex:0 1 auto;
-          > div{
-            display:inline-block;
-            flex:0 1 auto;
-            width:50%;
-            padding: 0;
-            margin: 0;
-            border-right:none;
-            &:last-child{
-              margin-right:0;
-              padding-right:0;
-              border:none;
-            }
-            display:flex;
-            justify-content: flex-start;
-            align-items:center;
-            img{
-              margin: 0 0.4rem 0 0;
-              height:23px;
-            }
-          }
-        }
-    }
+    align-items: flex-end;
   }
-  
   #mnt{
     display:none;
     position:absolute;
@@ -177,82 +131,28 @@ header{
   }
   #headermenu{
     display:flex;
-    justify-content: space-between;
-    > div{
-      display:flex;
-      justify-content: flex-start;
-      padding:0;
-      @media (max-width: 720px){
-        display:none!important;
-      }
+    justify-content: flex-end;
+    margin-bottom:1rem;
+    flex-wrap: wrap;
   }
-  
-}
 }
 .headermenuitem{
   flex:0 1 auto;
-  color:@orange;
-  text-transform:uppercase;
+  color:@content;
   text-align:center;
   font-size:1.2rem;
-  line-height:3rem;
   margin-left:-1px;
-  border-right:1px solid @grey;
-  
+  padding: 0 1rem 0.5rem 1rem;
   word-wrap: none;
   white-space: nowrap;
   position:relative;
-  .sub-menu{
-    width:100vw;
-    height:0;
-    overflow:hidden;
-    position:fixed;
-    left:0;
-    margin-top:-1px;
-    text-align:left;
-    line-height:1.3em;
-    z-index:99;
-    .cols{
-      columns: 4;
-      background:@grey;
-      padding:1rem;
-      .sub-menu-item{
-        > a{
-          color:@content;
-          font-weight:bold;
-          font-size:0.95rem;
-        }
-        margin:0 0 1rem 0;
-        .sub-sub-menu-item{
-          a{
-            color:@content;
-            text-transform: none;
-            font-size:0.95rem;
-            line-height:1.3em;
-            &:hover{
-              color:@grey;
-              text-decoration: underline;
-            }
-          }
-          &::before{
-            content: '>>';
-            color:@content;
-            margin:0 0.25rem 0 0;
-            font-size:0.85rem;
-          }
-        }
-      }
-    }
+  border-bottom:2px solid transparent;
+  a{
+    color:@content;
+    text-decoration: none;
   }
   &:hover{
-    background:@grey;
-    a{
-      color:@grey;
-      text-decoration: none;
-    }
-    .sub-menu{
-      height:auto;
-    }
+    border-bottom:2px solid @orange;
   }
 }
 footer{
@@ -278,6 +178,38 @@ footer{
         margin:0;
         border:none;
       }
+    }
+  }
+}
+.ccontent{
+  text-align:center;
+}
+.ts{
+  h1{
+    font-size:4rem;
+    margin:0;
+    text-align:center;
+  }
+  h2{
+    font-size:1.3rem;
+    color:@content;
+    margin:0;
+    text-align:center;
+    font-family: 'Raleway',Arial, Helvetica, sans-serif !important;
+  }
+}
+section{
+  padding: 2rem 0 2rem 0;
+}
+#home{
+  .headimg{
+    height:40vh;
+    margin:2rem 0 0 0;
+  }
+  #produkte{
+    background:@grey_light;
+    #tc{
+      padding:0 0 300px 0;
     }
   }
 }
