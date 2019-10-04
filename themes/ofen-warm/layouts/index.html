@@ -54,145 +54,71 @@
     <div id="pac" class="ui container">
       <div class="ui three column grid">
         {{range .element}}
-          <div class="column">
-              <img src="{{partial "imgUrl" (dict "img" .bild "params" "q_100" )}}" />
-              <h3>{{.titel}}</h3>
-              <div>{{.content|safeHTML}}</div>
-          </div>
+        <div class="column">
+          <img src="{{partial "imgUrl" (dict "img" .bild "params" "q_100" )}}" />
+          <h3>{{.titel}}</h3>
+          <div>{{.content|safeHTML}}</div>
+        </div>
         {{end}}
       </div>
       <h4>{{.titel_content_unten}}</h4>
       <div>{{.content_unten|safeHTML}}</div>
-      <a class="infobutton" href="{{.buttonlink}}">{{.buttonbeschriftung}}</a>
+      <a class="infobutton" href="{{.button_link}}">{{.buttonbeschriftung}}</a>
     </div>
     {{end}}
   </section>
   {{end}}
   {{with .Params.service}}
   <section id="{{.interner_linkname}}" class="ui container">
-      {{partial "titleSubtitle" (dict "top" false "title" .titel "subtitle" .untertitel)}}
+    {{partial "titleSubtitle" (dict "top" false "title" .titel "subtitle" .untertitel)}}
     <div class="ui two column grid">
-      <div class="column" style="background:url({{partial "imgUrl" (dict "img" .bild "params" "q_100" )}}) left bottom no-repeat; background-size:contain;"></div>
-      <div class="column" style="padding:2rem 0;">
+      <div class="column"
+        style="background:url({{partial "imgUrl" (dict "img" .bild "params" "q_100" )}}) left bottom no-repeat; background-size:contain;">
+      </div>
+      <div class="column content" style="padding:2rem 0;">
         {{.content|safeHTML}}
       </div>
     </div>
   </section>
   {{end}}
-  <div class="wgrey">
-    <div id="slidercontainer">
-      <ul id="slider">
-        {{ range $x,$img := .Params.slider }}
-        <li>
-          <div class="slideritem {{if eq $img.image_slide true}}full{{else}}ui container{{end}}"
-            style="background:url({{partial "imgUrl" (dict "img" .bild "params" "q_100" )}}) center center no-repeat;">
-            <div class="ptxt {{if eq $img.image_slide true}}full{{else}}ui container{{end}}">
-              <a class="titles {{if eq $img.image_slide true}}full{{end}}"
-                href="{{with $img.titel_und_link.link}}{{relref $p . }}{{end}}">
-                <h4>{{$img.titel_und_link.untertitel|safeHTML}}</h4>
-                <h3>{{$img.titel_und_link.titel|safeHTML}}</h3>
-              </a>
-              {{with $img.titel_und_link.link}}
-              <a class="morebutton_slider" href="{{relref $p . }}">
-                <div class="txt">{{$img.titel_und_link.linkbeschriftung}}</div>
-              </a>
-              {{end}}
-            </div>
-          </div>
-        </li>
-        {{end}}
-      </ul>
+  {{with .Params.ofenmobil}}
+  <section id="{{.interner_linkname}}" class="ui container">
+    <div class="ui two column grid"  style="background:url({{partial "imgUrl" (dict "img" .bild "params" "q_100" )}}) center center no-repeat; background-size:cover;">
+      <div class="column content" style="padding:2rem 0;">
+          {{partial "titleSubtitle" (dict "top" false "title" .titel "subtitle" .untertitel)}}
+        {{.content|safeHTML}}
+      </div>
+      <div class="column">
+        &nbsp;
+      </div>
     </div>
-  </div>
-  <div class="ui container">
-    <div id="icons">
-      {{range .Params.icon_info}}
-      <div>
-        <div>
-          <img src="{{partial "imgUrl" (dict "img" .icon "params" "q_100" )}}" alt="{{.titel}}" />
+    <a class="infobutton" href="{{.buttonlink}}">{{.buttonbeschriftung}}</a>
+  </section>
+  {{end}}
+  {{with .Params.entscheidungshilfe}}
+  <section id="{{.interner_linkname}}" class="ui container" style="background:url({{partial "imgUrl" (dict "img" .flammen "params" "q_100" )}}) center bottom no-repeat; background-size:100px;">
+    {{partial "titleSubtitle" (dict "top" false "title" .titel "subtitle" .untertitel)}}
+    <div class="ui two column grid">
+      {{range .varianten}}
+      <div class="column">
+        <div class="icontitle">
+            <img src="{{partial "imgUrl" (dict "img" .bild "params" "q_100" )}}" />
+            <h2>{{.titel|safeHTML}}</h2>
         </div>
-        <div>
-          <h4>{{.titel}}</h4>
+        <div class="content">
           {{.content|safeHTML}}
         </div>
       </div>
       {{end}}
     </div>
-  </div>
-  <div class="ui container">
-    {{with .Params.produkte}}
-    <div id="produkte">
-      <h3>{{.untertitel}}</h3>
-      <h2>{{.titel}}</h2>
-      <div id="pelements" class="ui equal width centered doubling stackable grid ">
-        {{range .links}}
-        <div class="column">
-          <a href="{{relref $p .link }}">
-            <div>
-              <img src="{{partial "imgUrl" (dict "img" .icon "params" "q_100" )}}" alt="{{.titel}}" />
-            </div>
-            <div class="agributton">
-              <div class="iconw">
-                <i class="icon chevron right"></i>
-              </div>
-              <div class="text">
-                {{.titel}}
-              </div>
-            </div>
-          </a>
-        </div>
-        {{end}}
-      </div>
-    </div>
-    {{end}}
-  </div>
-  <div class="wgrey">
-    <div class="ui container">
-      {{with .Params.anwendungsbereiche}}
-      <div id="anwendungsbereiche">
-        <h3>{{.untertitel}}</h3>
-        <h2>{{.titel}}</h2>
-        <div class="pelements">
-          {{range .bereiche}}
-          <div class="column">
-            <div class="abcard">
-              <a href="{{relref $p .link }}">
-
-                <div class="icon"
-                  style="background:url({{partial "imgUrl" (dict "img" .icon "params" "q_100" )}}) center center no-repeat;" />
-            </div>
-            </a>
-            <div class="inner">
-              <a href="{{relref $p .link }}">
-                <h4>{{.titel}}</h4>
-              </a>
-              <div class="content">{{.content|safeHTML}}</div>
-              <a href="{{relref $p .link }}">{{.linkbeschriftung}}</a>
-            </div>
-          </div>
-        </div>
-        {{end}}
-      </div>
-    </div>
-    {{end}}
-  </div>
-</div>
-<div class="ui container">
-  {{with .Params.ueber_uns}}
-  <div id="about">
-    <div class="ui two column grid stackable">
-      <div class="column"
-        style="background:url({{partial "imgUrl" (dict "img" .bild "params" "q_100" )}}) center center no-repeat;">
-
-      </div>
-      <div class="column">
-        <h3>{{.untertitel}}</h3>
-        <h2>{{.titel}}</h2>
-        {{.content|safeHTML}}
-      </div>
-    </div>
-  </div>
+  </section>
   {{end}}
-</div>
+  {{with .Params.kontakt}}
+  <section id="{{.interner_linkname}}">
+    <div class="ui container">
+      {{.content|safeHTML}}
+    </div>
+  </section>
+  {{end}}
 </div>
 {{ end }}
