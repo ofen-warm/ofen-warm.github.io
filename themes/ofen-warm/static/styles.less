@@ -191,11 +191,42 @@ footer{
     text-align:center;
   }
   h2{
+    font-size:4rem;
+    color:@content;
+    margin:0;
+    text-align:center;
+  }
+  h3{
     font-size:1.3rem;
     color:@content;
     margin:0;
     text-align:center;
-    font-family: 'Raleway',Arial, Helvetica, sans-serif !important;
+    font-family: 'Raleway',Arial, Helvetica, sans-serif;
+  }
+  &.top{
+    h2{
+      font-size:1.3rem;
+      color:@content;
+      margin:0;
+      text-align:center;
+      font-family: 'Raleway',Arial, Helvetica, sans-serif;
+    }
+  }
+  &.sub{
+    h3{
+      font-size:2.5rem;
+      color:@content;
+      margin:0;
+      text-align:center;
+      font-family: 'Blippo W01 Black',Arial, Helvetica, sans-serif;
+    }
+    h4{
+      font-size:1.3rem;
+      color:@content;
+      margin:0;
+      text-align:center;
+      font-family: 'Raleway',Arial, Helvetica, sans-serif !important;
+    }
   }
 }
 section{
@@ -210,6 +241,26 @@ section{
     background:@grey_light;
     #tc{
       padding:0 0 300px 0;
+    }
+    .left{
+      h4,h3{
+        text-align:right!important;
+      }
+    }
+    .right{
+      h4,h3{
+        text-align:left!important;
+      }
+    }
+    .column{
+      &.tx,&.img{
+        display:flex!important;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      img{
+        max-width:100%;
+      }
     }
   }
 }

@@ -197,6 +197,33 @@ footer .footermenu a:last-child {
   text-align: center;
 }
 .ts h2 {
+  font-size: 4rem;
+  color: #1e1e1e;
+  margin: 0;
+  text-align: center;
+}
+.ts h3 {
+  font-size: 1.3rem;
+  color: #1e1e1e;
+  margin: 0;
+  text-align: center;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+.ts.top h2 {
+  font-size: 1.3rem;
+  color: #1e1e1e;
+  margin: 0;
+  text-align: center;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+.ts.sub h3 {
+  font-size: 2.5rem;
+  color: #1e1e1e;
+  margin: 0;
+  text-align: center;
+  font-family: 'Blippo W01 Black', Arial, Helvetica, sans-serif;
+}
+.ts.sub h4 {
   font-size: 1.3rem;
   color: #1e1e1e;
   margin: 0;
@@ -215,4 +242,21 @@ section {
 }
 #home #produkte #tc {
   padding: 0 0 300px 0;
+}
+#home #produkte .left h4,
+#home #produkte .left h3 {
+  text-align: right!important;
+}
+#home #produkte .right h4,
+#home #produkte .right h3 {
+  text-align: left!important;
+}
+#home #produkte .column.tx,
+#home #produkte .column.img {
+  display: flex!important;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#home #produkte .column img {
+  max-width: 100%;
 }
