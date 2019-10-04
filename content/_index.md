@@ -53,6 +53,7 @@ content = "<p>Mehr Info unter <a href=\"http://www.fireplace.de/\" title=\"\">ww
 titel = "Scheitholz Kaminöfen"
 [[produkte.produkte]]
 bild = "/uploads/gravissimo.png"
+bild_rechts = true
 buttonbeschriftung = "weitere Infos"
 buttonlink = "mailto:info@ofen-warm.de?subject=GRAVISSIMO"
 interner_linkname = ""
@@ -60,6 +61,7 @@ titel = "<p><em>GRAVISSIMO</em></p>"
 untertitel = "Pelletofen ohne Strom"
 [[produkte.produkte]]
 bild = "/uploads/lima.png"
+bild_rechts = false
 buttonbeschriftung = "weitere Infos"
 buttonlink = "mailto:info@ofen-warm.de?subject=GRAVISSIMO"
 interner_linkname = ""
