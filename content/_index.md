@@ -65,7 +65,7 @@ bild_rechts = false
 buttonbeschriftung = "weitere Infos"
 buttonlink = "mailto:info@ofen-warm.de?subject=GRAVISSIMO"
 interner_linkname = ""
-titel = "<p>LIMA</p>"
+titel = "<p><em>LIMA</em></p>"
 untertitel = "Pelletofen mit Strom"
 [service]
 bild = "/uploads/service_kompass.png"
