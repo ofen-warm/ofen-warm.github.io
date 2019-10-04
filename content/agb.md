@@ -1,7 +1,7 @@
 +++
 bild_header = ""
 date = "2018-05-25T09:47:15+02:00"
-seo_description = "asd"
+seo_description = "asds"
 titel_header = "AGB"
 title = "AGB"
 type = "page"
