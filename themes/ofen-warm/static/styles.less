@@ -30,10 +30,33 @@ a{
   }
 }
 header{
+  padding-bottom:2rem;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  background:white;
   .logo{
     height:140px;
+    margin-top:-2rem;
+    transition-property: height;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
     @media (max-width: 720px){
       height:60px;
+    }
+  }
+  &.scrolled{
+    padding-bottom:1rem;
+    border-bottom:1px solid@orange;
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:9999;
+    .logo{
+      height:80px;
+      @media (max-width: 720px){
+        height:60px;
+      }
     }
   }
   .logow{
@@ -155,6 +178,9 @@ header{
   &:hover{
     border-bottom:2px solid @orange;
   }
+  &:active{
+    border-bottom:2px solid @orange;
+  }
 }
 footer{
   .eblink{
@@ -267,7 +293,7 @@ ul{
 #home{
   .headimg{
     height:40vh;
-    margin:2rem 0 0 0;
+    margin:0 0 0;
   }
   #service{
     padding-bottom:0;
