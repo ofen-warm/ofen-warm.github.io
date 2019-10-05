@@ -40,7 +40,43 @@
           <img class="logo" src="/uploads/logo_ofenwarm.png" />
         </a>
       </div>
-      <div id="headermenumobil" class="mobinit ui container">
+      <div id="headermenumobil" class="mobinit">
+        
+        <div class="headermenuitem ">
+          <a href="#ueberuns" title="">
+            <span>Über uns</span>
+          </a>
+        </div>
+        
+        <div class="headermenuitem ">
+          <a href="#produkte" title="">
+            <span>Produkte</span>
+          </a>
+        </div>
+        
+        <div class="headermenuitem ">
+          <a href="#service" title="">
+            <span>Service</span>
+          </a>
+        </div>
+        
+        <div class="headermenuitem ">
+          <a href="#ofenmobil" title="">
+            <span>Ofenmobil</span>
+          </a>
+        </div>
+        
+        <div class="headermenuitem ">
+          <a href="#entscheidungshilfe" title="">
+            <span>Entscheidungshilfe</span>
+          </a>
+        </div>
+        
+        <div class="headermenuitem ">
+          <a href="#kontakt" title="">
+            <span>Kontakt</span>
+          </a>
+        </div>
         
       </div>
       <div id="headermenu" class=" ui container">
@@ -88,11 +124,11 @@
           </div>
           
       </div>
-    </div>
-    <div id="mnt">
-      <button class="ui basic icon button" id="mntbt">
-        <i class="bars icon"></i>
-      </button>
+      <div id="mnt">
+          <button class="ui basic icon button" id="mntbt">
+            <i class="bars icon"></i>
+          </button>
+        </div>
     </div>
   </div>
 </header>
@@ -132,7 +168,7 @@ Rosi Wagner Zeitlos</p>
 
   </main>
   
-<footer class="ui container fluid ">
+<footer class=" ">
   <div class="ui container">
       <div class="footermenu">
            
@@ -152,7 +188,7 @@ Rosi Wagner Zeitlos</p>
   <script type="text/javascript" src="https://ofen-warm.github.io/lib/semantic.min.js"></script>
   <script type="text/javascript">
     $(function () {
-      const scrElems = ["header"];
+      const scrElems = ["header",'#home'];
       let scr = false;
       $(window).scroll(function () {
         const supportPageOffset = window.pageXOffset !== undefined;
@@ -169,6 +205,22 @@ Rosi Wagner Zeitlos</p>
               $(v).removeClass('scrolled').addClass('unscrolled');
             })
           }
+        }
+      });
+      $('.headermenuitem a').click(function(){
+        $('.headermenuitem').removeClass('active');
+        $(this).parent().addClass('active');
+        $('#headermenumobil').removeClass('mobvis');
+      });
+      $('#mntbt').click(function () {
+        if ($('#headermenumobil').hasClass('mobvis')) {
+          $('#headermenumobil').removeClass('mobvis');
+          $('#mntbt i').addClass('bars');
+          $('#mntbt i').removeClass('remove');
+        } else {
+          $('#headermenumobil').addClass('mobvis');
+          $('#mntbt i').removeClass('bars');
+          $('#mntbt i').addClass('remove');
         }
       });
     });
