@@ -1,5 +1,5 @@
 {{ $t := .Site.GetPage "footer.md" }}
-<footer class="ui container fluid {{if .IsHome}}home{{end}}">
+<footer class=" {{if .IsHome}}home{{end}}">
   <div class="ui container">
       <div class="footermenu">
           {{ $currentPage := . }} {{ range .Site.Menus.footer }}

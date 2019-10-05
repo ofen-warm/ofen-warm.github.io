@@ -28,7 +28,7 @@
   <script type="text/javascript" src="{{ $.Site.BaseURL }}/lib/semantic.min.js"></script>
   <script type="text/javascript">
     $(function () {
-      const scrElems = ["header"];
+      const scrElems = ["header",'#home'];
       let scr = false;
       $(window).scroll(function () {
         const supportPageOffset = window.pageXOffset !== undefined;
@@ -45,6 +45,22 @@
               $(v).removeClass('scrolled').addClass('unscrolled');
             })
           }
+        }
+      });
+      $('.headermenuitem a').click(function(){
+        $('.headermenuitem').removeClass('active');
+        $(this).parent().addClass('active');
+        $('#headermenumobil').removeClass('mobvis');
+      });
+      $('#mntbt').click(function () {
+        if ($('#headermenumobil').hasClass('mobvis')) {
+          $('#headermenumobil').removeClass('mobvis');
+          $('#mntbt i').addClass('bars');
+          $('#mntbt i').removeClass('remove');
+        } else {
+          $('#headermenumobil').addClass('mobvis');
+          $('#mntbt i').removeClass('bars');
+          $('#mntbt i').addClass('remove');
         }
       });
     });

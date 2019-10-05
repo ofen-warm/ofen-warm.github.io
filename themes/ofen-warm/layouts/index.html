@@ -6,7 +6,8 @@
   <div class="headimg"
     style="background:url({{partial "imgUrl" (dict "img" .bild "params" "q_100" )}}) center center no-repeat; background-size:cover;">
   </div>
-  <section id="{{.interner_linkname}}">
+  <section id="sec-{{.interner_linkname}}">
+    <div class="spm" id="{{.interner_linkname}}"></div>
     <div class="ui container">
       {{partial "titleSubtitle" (dict "top" true "title" .titel "subtitle" .untertitel)}}
       <div class="ccontent">
@@ -16,7 +17,8 @@
   </section>
   {{end}}
   {{with .Params.produkte}}
-  <section id="{{.interner_linkname}}">
+  <section id="sec-{{.interner_linkname}}">
+      <div class="spm" id="{{.interner_linkname}}"></div>
     <div id="tc" class="ui container">
       {{partial "titleSubtitle" (dict "top" false "title" .titel "subtitle" .untertitel)}}
       <div class="ccontent">
@@ -27,7 +29,7 @@
       <div id="plist" class="ui grid two column">
         {{range .produkte}}
         <div class="prod column">
-          <div class="ui grid">
+          <div class="ui grid stackable">
             {{if eq .bild_rechts true}}
             <div class="column left tx six wide">
               {{partial "titleSubtitle" (dict "sub" true "title" .titel "subtitle" .untertitel)}}
@@ -52,7 +54,7 @@
     </div>
     {{with .produktarten}}
     <div id="pac" class="ui container">
-      <div class="ui three column grid">
+      <div class="ui three column grid stackable">
         {{range .element}}
         <div class="column">
           <img src="{{partial "imgUrl" (dict "img" .bild "params" "q_100" )}}" />
@@ -69,10 +71,11 @@
   </section>
   {{end}}
   {{with .Params.service}}
-  <section id="{{.interner_linkname}}" class="ui container">
+  <section id="sec-{{.interner_linkname}}" class="ui container">
+      <div class="spm" id="{{.interner_linkname}}"></div>
     {{partial "titleSubtitle" (dict "top" false "title" .titel "subtitle" .untertitel)}}
-    <div class="ui two column grid">
-      <div class="column"
+    <div class="ui two column grid stackable">
+      <div class="column computer only"
         style="background:url({{partial "imgUrl" (dict "img" .bild "params" "q_100" )}}) left bottom no-repeat; background-size:contain;">
       </div>
       <div class="column content" style="padding:2rem 0;">
@@ -82,13 +85,14 @@
   </section>
   {{end}}
   {{with .Params.ofenmobil}}
-  <section id="{{.interner_linkname}}" class="ui container">
-    <div class="ui two column grid"  style="background:url({{partial "imgUrl" (dict "img" .bild "params" "q_100" )}}) center center no-repeat; background-size:cover;">
+  <section id="sec-{{.interner_linkname}}" class="ui container">
+      <div class="spm" id="{{.interner_linkname}}"></div>
+    <div class="ui two column grid stackable"  style="background:url({{partial "imgUrl" (dict "img" .bild "params" "q_100" )}}) center center no-repeat; background-size:cover;">
       <div class="column content" style="padding:2rem 0;">
           {{partial "titleSubtitle" (dict "top" false "title" .titel "subtitle" .untertitel)}}
         {{.content|safeHTML}}
       </div>
-      <div class="column">
+      <div class="column computer only">
         &nbsp;
       </div>
     </div>
@@ -96,9 +100,10 @@
   </section>
   {{end}}
   {{with .Params.entscheidungshilfe}}
-  <section id="{{.interner_linkname}}" class="ui container" style="background:url({{partial "imgUrl" (dict "img" .flammen "params" "q_100" )}}) center bottom no-repeat; background-size:100px;">
+  <section id="sec-{{.interner_linkname}}" class="ui container" style="background:url({{partial "imgUrl" (dict "img" .flammen "params" "q_100" )}}) center bottom no-repeat; background-size:100px;">
+      <div class="spm" id="{{.interner_linkname}}"></div>
     {{partial "titleSubtitle" (dict "top" false "title" .titel "subtitle" .untertitel)}}
-    <div class="ui two column grid">
+    <div class="ui two column grid stackable">
       {{range .varianten}}
       <div class="column">
         <div class="icontitle">
@@ -114,7 +119,8 @@
   </section>
   {{end}}
   {{with .Params.kontakt}}
-  <section id="{{.interner_linkname}}">
+  <section id="sec-{{.interner_linkname}}">
+      <div class="spm" id="{{.interner_linkname}}"></div>
     <div class="ui container">
       {{.content|safeHTML}}
     </div>
