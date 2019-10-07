@@ -63,7 +63,7 @@ untertitel = "Pelletofen ohne Strom"
 bild = "/uploads/lima.png"
 bild_rechts = false
 buttonbeschriftung = "weitere Infos"
-buttonlink = "mailto:info@ofen-warm.de?subject=GRAVISSIMO"
+buttonlink = "https://www.koenigshuette-ofen.com/pelletoefen/"
 interner_linkname = ""
 titel = "<p><em>LIMA</em></p>"
 untertitel = "Pelletofen mit Strom"
