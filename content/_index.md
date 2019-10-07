@@ -1,5 +1,5 @@
 +++
-seo_description = "asd"
+seo_description = "Ofen-warm - Wir verfügen bereits seit über 15 Jahren Erfahrung im Verkauf von Pellet- und Kaminöfen. Deshalb können wir Ihnen eine kompetente Beratung zusichern. Wir freuen uns sehr wenn auch Sie uns Ihr Vertrauen schenken."
 title = "Home"
 type = "page"
 [entscheidungshilfe]
@@ -68,7 +68,7 @@ interner_linkname = ""
 titel = "<p><em>LIMA</em></p>"
 untertitel = "Pelletofen mit Strom"
 [service]
-bild = "/uploads/2019/10/07/service_kompass_neu.png"
+bild = "/uploads/2019/10/07/service_kompass_final.png"
 content = "<ul><li><p>Life Ofenvorführung vor Ort</p></li><li><p>Kompetente Beratung und Verkauf </p></li><li><p>Lieferservice innerhalb unseres Einzugsgebietes</p></li><li><p>Kostenlose Einweisung in das Gerät</p></li><li><p>Unterstützung bei der Einbringung des Ofens an den Aufstellungsort, der Montage und Kaminanschluss (Abrechnung nach tatsächlichem Aufwand, keine Kernlochbohrung für Wandfutter möglich)</p></li><li><p>Ofenzubehör</p></li><li><p>Ersatzteil-Service</p></li></ul>"
 interner_linkname = "service"
 titel = "<p><em>SERVICE</em> FÜR SIE</p>"
