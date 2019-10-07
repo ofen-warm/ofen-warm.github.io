@@ -9,10 +9,10 @@ weight = 3
 +++
 Angaben gemäß § 5 TMG:
 
-Büro ofen Warm
-Hauptstraße 35
-93348 Kirchdorf
-Telefon 09444/9774571
+Büro Ofen Warm   
+Hauptstraße 35   
+93348 Kirchdorf   
+Telefon 09444/9774571   
 info@ofen-warm.de
 
 Umsatzsteuer-Identifikationsnummer
@@ -25,10 +25,8 @@ Amtsgericht Kelheim
 
 Das Unternehmen nimmt nicht an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teil.
 
-Design & Konzept
-[elvira.beck@design](http://elvirabeck-design.de)
+Printdesign  
+[zeitlos-rosiwagner](http://www.zeitlos-rosiwagner.de/)
 
-Logo & Print
-Rosi Wagner Zeitlos
-
-     
+Webdesign  
+[elvira.beck|design](http://elvirabeck-design.de/)
