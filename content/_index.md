@@ -16,7 +16,7 @@ bild = "/uploads/pellet_mitstrom.png"
 content = "<h3>PRO</h3><p>Vorteile gegenüber Pelletöfen ohne Strom:</p><ul><li><p>Automatisches Starten</p></li><li><p>Mehrere Zeitfenster mit unterschiedlichen Temperaturen einstellbar</p></li><li><p>Temperatursteuerung über Thermostat</p></li><li><p>Mit Raumluftgebläse effektivere Luftumwälzung möglich</p></li><li><p>Fernsteuerung über APP</p></li></ul><h3>CONTRA</h3><p>Wichtigste Nachteile gegenüber Pelletöfen ohne Strom:</p><ul><li><p>Keine Kamin-Mehrfachbelegung im Regelfall möglich</p></li><li><p>Hörbares Warmluft-Gebläse, bei manchen Modellen aber auch ausschaltbar</p></li><li><p>Stromverbrauch</p></li><li><p>Höhere Unterhaltungskosten </p></li><li><p>Regelmäßiger Kundendienst durch einen autorisierten Fachmann empfehlenswert/notwendig (Nach ca. 2.000 Betriebsstunden)</p></li></ul>"
 titel = "<p><em>PELLETÖFEN</em><br>MIT STROM</p>"
 [kontakt]
-content = "<p><strong>Büro ofen Warm</strong></p><p>Hauptstraße 35, 93348 Kirchdorf</p><p>Telefon 09444/9774571 | info@ofen-warm.de</p>"
+content = "<p><strong>Büro Ofen Warm</strong></p><p>Hauptstraße 35, 93348 Kirchdorf</p><p>Telefon 09444/9774571 | info@ofen-warm.de</p>"
 interner_linkname = "kontakt"
 titel = ""
 untertitel = ""
