@@ -55,7 +55,7 @@ titel = "Scheitholz Kaminöfen"
 bild = "/uploads/gravissimo.png"
 bild_rechts = true
 buttonbeschriftung = "weitere Infos"
-buttonlink = "info@ofen-warm.de?subject=GRAVISSIMO"
+buttonlink = "http://fireplace.de"
 interner_linkname = ""
 titel = "<p><em>GRAVISSIMO</em></p>"
 untertitel = "Pelletofen ohne Strom"
