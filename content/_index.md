@@ -29,7 +29,7 @@ interner_linkname = "ofenmobil"
 titel = "<p><em>OFEN MOBIL</em></p>"
 untertitel = "Jetzt testen"
 [produkte]
-content = "<p>Wir führen von der Olsberg GmbH die Marken „Königshütte“ und „Fireplace Elite“.</p><p>Unser Schwerpunkt liegt bei Pelletöfen ohne und mit Strom, aber auch Kaminöfen finden Sie bei uns. „Klasse statt Masse“ heißt unser Motto!</p>"
+content = "<p>Wir führen von der Olsberg GmbH die Marken <a href=\"https://www.koenigshuette-ofen.com/pelletoefen/\" title=\"\">„Königshütte“</a> und <a href=\"http://fireplace.de\" title=\"\">„Fireplace Elite“</a>.</p><p>Unser Schwerpunkt liegt bei Pelletöfen ohne und mit Strom, aber auch Kaminöfen finden Sie bei uns. „Klasse statt Masse“ heißt unser Motto!</p>"
 interner_linkname = "produkte"
 titel = "<p><em>PRODUKTE</em></p>"
 untertitel = "Ofen Warm"
