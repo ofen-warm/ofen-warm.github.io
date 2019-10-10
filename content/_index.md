@@ -21,7 +21,7 @@ interner_linkname = "kontakt"
 titel = ""
 untertitel = ""
 [ofenmobil]
-bild = "/uploads/ofen-mobil.png"
+bild = "/uploads/2019/10/10/ofen-mobil_neu.jpg"
 buttonbeschriftung = "Termin vereinbaren"
 buttonlink = "mailto:info@ofen-warm.de?subject=OfenMobil"
 content = "<p>Bei ernsthaftem Interesse an unseren Pelletöfen kommen wir auch mit unserem Ofenmobil direkt zu Ihnen und können diese beiden Öfen, für Sie natürlich kostenlos, vorführen.</p><ul><li><p>Pelletofen Gravissimo ohne Strom</p></li><li><p>Pelletofen Lima mit Strom</p></li></ul><p>Wir nehmen mit Ihnen die Öfen in Betrieb und zeigen Ihnen die Vorzüge, Unterschiede und Möglichkeiten.</p><p>Für die Vorführung, Dauer ca. 1 – 1,5 Stunden, benötigen wir von Ihnen lediglich einen 220 V Stromanschluss und eine Stellfläche (möglichst eben) für unser Gespann (Anhänger mit PKW, ca. 9 m Gesamtlänge)</p>"
